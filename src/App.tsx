@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { AuthProvider, useAuth } from "./context/authContext";
 import { CartProvider, useCart } from "./context/cartContext";
+import { SearchDemo } from "./components/SearchDemo";
 import { useFetch } from "./hooks/useFetch";
 
 type User = {
@@ -214,6 +215,7 @@ function App() {
 
           <main className="main-layout">
             <div className="content-column">
+              <SearchDemo />
               <UserDirectory />
               <Catalog />
             </div>
